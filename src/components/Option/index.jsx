@@ -7,7 +7,7 @@ export const Option = ({ type, text, onSelected }) => {
       className="option"
       onClick={() => {
         console.log(text);
-        onSelected();
+        onSelected(type);
       }}
     >
       <Icon type={type} />
